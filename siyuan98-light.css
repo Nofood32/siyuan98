@@ -1,0 +1,1433 @@
+:root {
+	/* 主色 */
+	--b3-theme-primary: #3573f0;
+	--b3-theme-primary-light: rgba(53, 115, 240, 0.54);
+	--b3-theme-primary-lighter: rgba(53, 115, 240, 0.38);
+	--b3-theme-primary-lightest: rgba(53, 115, 240, 0.12);
+	--b3-theme-secondary: #f3a92f;
+	--b3-theme-background: #d4d0c8;
+	--b3-theme-background-light: #dfe0e1;
+	--b3-theme-surface: var(--b3-theme-background);
+	--b3-theme-surface-light: rgba(243, 243, 243, .86);
+	--b3-theme-surface-lighter: rgba(0, 0, 0, .06);
+	--b3-theme-error: #d23f31;
+
+	/* 文字颜色 */
+	--b3-theme-on-primary: #fff;
+	--b3-theme-on-secondary: #fff;
+	--b3-theme-on-background: #000;
+	--b3-theme-on-surface: #181818;
+	--b3-theme-on-surface-light: rgba(95, 99, 104, .68);
+	--b3-theme-on-error: #fff;
+
+	/* 字体 */
+	--b3-font-family: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+	--b3-font-family-code: "JetBrainsMono-Regular", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+	--b3-font-family-graph: mononoki;
+	--b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
+	--b3-font-family-math: KaTeX_Math;
+
+	/* 顶部工具栏 */
+	--b3-toolbar-background: #292a2d;
+	--b3-toolbar-blur-background: #3f4041;
+	--b3-toolbar-color: var(--b3-text-n);
+
+	/* 线条 */
+	--b3-border-color: rgba(0, 0, 0, .1);
+
+	/* 滚动条 */
+	--b3-scroll-color: rgba(0, 0, 0, .2);
+
+	/* 列表 */
+	--b3-list-hover: #e9eaea;
+	--b3-list-icon-hover: rgba(33, 34, 36, .1);
+
+	/* 菜单 */
+	--b3-menu-background: #f8f9fa;
+
+	/* 提示 */
+	--b3-tooltips-color: rgba(0, 0, 0, 0.54);
+
+	/* 遮罩 */
+	--b3-mask-background: rgba(0, 0, 0, 0.78);
+
+	/* 卡片背景 */
+	--b3-card-error-color: rgb(97, 26, 21);
+	--b3-card-error-background: #f5d1cf;
+	--b3-card-warning-color: rgb(102, 60, 0);
+	--b3-card-warning-background: #ffe8c8;
+	--b3-card-info-color: rgb(13, 60, 97);
+	--b3-card-info-background: #d6eaf9;
+	--b3-card-success-color: rgb(30, 70, 32);
+	--b3-card-success-background: #d7eed8;
+
+	/* 自定义文字 */
+	--b3-font-color1: var(--b3-card-error-color);
+	--b3-font-color2: var(--b3-card-warning-color);
+	--b3-font-color3: var(--b3-card-info-color);
+	--b3-font-color4: var(--b3-card-success-color);
+	--b3-font-color5: var(--b3-theme-on-surface);
+	--b3-font-color6: var(--b3-theme-primary);
+	--b3-font-color7: var(--b3-theme-secondary);
+	--b3-font-color8: var(--b3-theme-error);
+	--b3-font-color9: #f5539e;
+	--b3-font-color10: #944194;
+	--b3-font-color11: #65b84d;
+	--b3-font-color12: #f5822e;
+	--b3-font-color13: var(--b3-theme-background);
+	--b3-font-background1: var(--b3-card-error-background);
+	--b3-font-background2: var(--b3-card-warning-background);
+	--b3-font-background3: var(--b3-card-info-background);
+	--b3-font-background4: var(--b3-card-success-background);
+	--b3-font-background5: #e2e3e4;
+	--b3-font-background6: #acd0fc;
+	--b3-font-background7: #fdeed6;
+	--b3-font-background8: rgba(255, 193, 153, 0.5);
+	--b3-font-background9: #fdd5e7;
+	--b3-font-background10: #e6c7e6;
+	--b3-font-background11: #def0d9;
+	--b3-font-background12: rgba(253, 198, 200, 0.5);
+	--b3-font-background13: var(--b3-theme-on-background);
+
+	/* 动画效果 */
+	--b3-transition: all .15s cubic-bezier(0, 0, .2, 1) 0ms;
+	--b3-width-transition: width .15s cubic-bezier(0, 0, .2, 1) 0ms;
+
+	/* 阴影 */
+	--b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+	--b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+
+	/* 图表颜色 */
+	--b3-graph-p-point: #076f7e;
+	--b3-graph-heading-point: #660e7a;
+	--b3-graph-math-point: #80FFA5;
+	--b3-graph-code-point: #00DDFF;
+	--b3-graph-table-point: #37A2FF;
+	--b3-graph-list-point: #FF0087;
+	--b3-graph-todo-point: #FFBF00;
+	--b3-graph-olist-point: #b3005f;
+	--b3-graph-listitem-point: #f65b00;
+	--b3-graph-bq-point: #8d48e3;
+	--b3-graph-super-point: #dd79ff;
+	--b3-graph-doc-point: #202124;
+	--b3-graph-tag-point: #dbf32f;
+	--b3-graph-asset-point: #05c091;
+	--b3-graph-line: #5f6368;
+	--b3-graph-ref-line: #d23f31;
+	--b3-graph-tag-line: #5f6b06;
+	--b3-graph-tag-tag-line: #dbf32f;
+	--b3-graph-asset-line: #037457;
+	--b3-graph-hl-point: #f3a92f;
+	--b3-graph-hl-line: #4285f4;
+
+	/* 编辑器搜索颜色 */
+	--b3-protyle-search-background: #ffe955;
+	--b3-protyle-search-border-color: #f2e680;
+	--b3-protyle-search-current-background: #a5d3fe;
+
+	/* 代码片段背景 */
+	--b3-protyle-code-background: rgba(27, 31, 35, .05);
+	--b3-protyle-code-linenumber-hl: #0000;
+
+	/* 所见即所得行内元素颜色 */
+	--b3-protyle-inline-strong-color: #202124;
+	--b3-protyle-inline-em-color: #202124;
+	--b3-protyle-inline-s-color: #202124;
+	--b3-protyle-inline-link-color: #4285f4;
+	--b3-protyle-inline-mark-background: rgb(252, 212, 126);
+	--b3-protyle-inline-mark-color: #202124;
+	--b3-protyle-inline-tag-color: #5f6368;
+	--b3-protyle-inline-blockref-color: #660e7a;
+
+	/* PDF */
+	--b3-pdf-selection: #d0e9c8;
+	--b3-pdf-sidebar-width: 200px;
+	--b3-pdf-offset: 0;
+	--b3-pdf-background1: var(--b3-theme-error);
+	--b3-pdf-background2: #f5822e;
+	--b3-pdf-background3: var(--b3-theme-secondary);
+	--b3-pdf-background4: #65b84d;
+	--b3-pdf-background5: #f5539e;
+	--b3-pdf-background6: var(--b3-theme-primary);
+	--b3-pdf-background7: #944194;
+	--b3-pdf-dark: #212224;
+
+	/* 渐变背景色 */
+	--b3-linear-gradient1: #0a246a;
+	--b3-linear-gradient2: #5776ac;
+	--b3-linear-gradient3: #a5c9ef;
+	/* 非活动渐变背景色 */
+	--b3-linear-gradient4: #9a9a9a;
+	--b3-linear-gradient5: #b5b5b5;
+	/* 阴影色 */
+	--b3-button-shadow1: #808080;
+	--b3-button-shadow2: #404040;
+	/* 高亮色 */
+	--b3-button-hilight0: #fff;
+	--b3-button-hilight1: #f6f6f6;
+	--b3-button-hilight2: #eceae7;
+	/* 文本的常规和悬停、焦点颜色 */
+	--b3-text-n: #000;
+	--b3-text-h: #fff;
+	/* 顶栏背景渐变 */
+	--b3-toolbar-bg-image: linear-gradient(to right, var(--b3-linear-gradient1) 0%, var(--b3-linear-gradient2) 50%, var(--b3-linear-gradient3) 100%);
+	/* 顶栏非活动背景渐变 */
+	--b3-toolbar-bg-image-blur: linear-gradient(to right, var(--b3-button-shadow1) 0%, var(--b3-linear-gradient4) 50%, var(--b3-linear-gradient5) 100%);
+	/* 凸面边框 */
+	--b3-shadow-convex: inset -1px -1px 0px 0px var(--b3-button-shadow2), inset 1px 1px 0px 0px var(--b3-button-hilight0), inset -2px -2px 0px 0px var(--b3-button-shadow1), inset 2px 2px 0px 0px var(--b3-button-hilight2);
+	/* 凹面边框 */
+	--b3-shadow-concave: inset -1px -1px 0px 0px var(--b3-button-hilight0), inset 1px 1px 0px 0px var(--b3-button-shadow1), inset -2px -2px 0px 0px var(--b3-button-hilight2), inset 2px 2px 0px 0px var(--b3-button-shadow2);
+	/* 按钮凸面边框 */
+	--b3-button-convex: inset -1px -1px 0px 0px var(--b3-button-shadow2), inset 1px 1px 0px 0px var(--b3-button-hilight0), inset -2px -2px 0px 0px var(--b3-button-shadow1);
+	/* 按钮凸面边框（小） */
+	--b3-small-button-convex: inset -1px -1px 0px 0px var(--b3-button-shadow2), inset 1px 1px 0px 0px var(--b3-button-hilight0);
+	/* 按钮凹面边框 */
+	--b3-button-concave: inset -1px -1px 0px 0px var(--b3-button-hilight0), inset 1px 1px 0px 0px var(--b3-button-shadow2), inset -2px -2px 0px 0px var(--b3-button-hilight2), inset 2px 2px 0px 0px var(--b3-button-shadow1);
+	/* 按钮凹面边框（小） */
+	--b3-small-button-concave: inset 1px 1px 0px 0px var(--b3-button-shadow2), inset -1px -1px 0px 0px var(--b3-button-hilight0);
+	/* 水平分割线 */
+	--b3-shadow-line: inset 0px -1px 0px 0px var(--b3-button-hilight0), inset 0px -2px 0px 0px var(--b3-button-shadow1);
+	/* 弹出工具或菜单边框 */
+	--b3-shadow-bar: inset -1px -1px 0px 0px var(--b3-button-shadow2), inset 1px 1px 0px 0px var(--b3-theme-background), inset -2px -2px 0px 0px var(--b3-button-shadow1), inset 2px 2px 0px 0px var(--b3-button-hilight0);
+	/* 按钮凹面背景 */
+	--b3-button-bg-focus: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAG0lEQVQYV2P8/////4MHDzIwHjhw4L+9vT0DAHAFCj6esq3FAAAAAElFTkSuQmCC");
+}
+
+/* https://github.com/siyuan-note/siyuan/issues/6440 */
+.protyle-action--order:after {
+	mix-blend-mode: multiply;
+}
+
+.b3-typography div.hljs,
+.protyle-wysiwyg div.hljs {
+	background-color: #f8f9fa;
+}
+
+/* 整体窗口阴影 */
+body {
+	padding: 4px;
+	background: var(--b3-theme-background);
+	box-shadow: var(--b3-shadow-convex);
+}
+
+/* 顶栏 */
+.toolbar {
+	background: var(--b3-toolbar-bg-image);
+	margin-bottom: 3px !important;
+}
+
+/* 顶栏非活动 */
+body.body--blur .toolbar {
+	background: var(--b3-toolbar-bg-image-blur);
+}
+
+/* 顶栏中部文档名称隐藏 */
+div#drag {
+	opacity: 0;
+}
+
+/** 顶栏按钮 **/
+.toolbar__item:not(.status .toolbar__item):not(.toolbar__item--close) {
+	padding: 6px;
+	background-color: var(--b3-theme-background);
+	box-shadow: var(--b3-shadow-convex);
+}
+
+/* 顶栏按钮悬停 */
+.toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):not(.status .toolbar__item):hover {
+	background-color: var(--b3-theme-background);
+}
+
+/* 顶栏按钮点击 */
+.toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):not(.status .toolbar__item):active {
+	box-shadow: var(--b3-button-concave);
+}
+
+/* 调整关闭按钮 */
+/* 按钮与边界有距离，鼠标移至屏幕最边缘时不能触发按钮，通过加大padding的尺寸来到达触发 */
+.toolbar__item--close {
+	position: relative;
+	bottom: 3px;
+	left: 5px;
+	padding: 6px 8px 0px 0px;
+	background: none;
+	border: 0;
+	box-shadow: none;
+}
+
+.toolbar__item--close>svg {
+	padding: 6px 8px;
+	background: var(--b3-theme-background);
+	box-shadow: var(--b3-shadow-convex);
+	border: 0;
+}
+
+.toolbar__item--close:hover {
+	background: none;
+}
+
+.toolbar__item--close:hover>svg {
+	background-color: var(--b3-theme-error);
+}
+
+.toolbar__item--close>svg:hover {
+	background-color: var(--b3-theme-error);
+}
+
+/* 调整按钮间距 */
+button#barBack {
+	margin-left: 4px;
+}
+
+div#barTopHelp {
+	margin-right: 4px;
+}
+
+/* 顶栏下方的窗口调整，包括左右边栏和编辑区，不含底部状态栏 */
+body>.fn__flex-1.fn__flex {
+	padding: 2px;
+	box-shadow: var(--b3-shadow-concave);
+
+}
+
+/* 修改后前进，按钮堆叠靠后，显示不全 */
+.b3-tooltips:hover,
+.b3-tooltips:focus-within {
+	z-index: 1;
+}
+
+/* 左右边栏 */
+.dock#dockLeft,
+.dock#dockRight {
+	box-sizing: border-box;
+	padding: 2px;
+	width: 32px;
+	border: 0 !important;
+	box-shadow: var(--b3-shadow-convex);
+	background-color: var(--b3-theme-surface);
+}
+
+/* 左右边栏按钮 */
+.dock__item {
+	justify-content: center;
+	margin: 7px 3px;
+	padding: 3px 0;
+	border-radius: 0;
+}
+
+.dock__item--active {
+	box-shadow: var(--b3-button-concave);
+}
+
+.dock__item--activefocus {
+	color: var(--b3-theme-primary) !important;
+	background-color: transparent !important;
+	box-shadow: var(--b3-button-concave);
+}
+
+.dock__item:hover,
+.dock__item--active {
+	background-color: transparent;
+}
+
+.dock__item:active {
+	box-shadow: var(--b3-button-concave);
+}
+
+/* 为laout区域设置阴影，包括左右展开栏 */
+.layout {
+	box-sizing: border-box;
+}
+
+/* 为除边栏之外的container区域设置透明背景，包括左右展开栏 */
+.layout-tab-container {
+	background-color: transparent;
+}
+
+/** 左右展开栏 **/
+/* 为左右展开栏设置阴影 */
+.layout-tab-container>.fn__flex-column {
+	padding: 2px;
+	box-sizing: border-box;
+	border: 0 !important;
+	box-shadow: var(--b3-shadow-convex);
+	background-color: var(--b3-theme-background);
+}
+
+/* 为左右展开栏题头设置分割线， 排除搜索栏和块引题头 */
+.block__icons:not(.search__header .block__icons):not(.block__icons.block__icons--border) {
+	margin-bottom: 4px;
+	height: 37px;
+	box-shadow: var(--b3-shadow-line)
+}
+
+/* 为文档树笔记本添加分割线 */
+.layout-tab-container ul.b3-list.b3-list--background {
+	padding-top: 2px;
+	padding-bottom: 4px;
+	box-shadow: var(--b3-shadow-line);
+}
+
+li.b3-list-item.b3-list-item--hide-action {
+	margin: 0 4px !important;
+	padding: 0;
+	border-radius: 0;
+}
+
+/* 文档树图标屏蔽 */
+.b3-list-item__icon {
+	pointer-events: none;
+}
+
+/* 已关闭笔记本 */
+/* 折叠时与笔记本分割线 */
+ul.b3-list.fn__flex-column {
+	box-shadow: inset 0px 1px 0px 0px var(--b3-button-shadow1), inset 0px 2px 0px 0px var(--b3-button-hilight0);
+	/* 上分割线 */
+}
+
+/* 展开时与笔记本分割线 */
+ul.b3-list.fn__flex-column.fn__flex-1 {
+	margin-top: 9px;
+	padding-top: 8px;
+	padding-bottom: 4px;
+	box-shadow: inset 0px 1px 0px 0px var(--b3-button-shadow1), inset 0px 2px 0px 0px var(--b3-button-shadow2), inset 0px 3px 0px 0px var(--b3-button-hilight2), inset 0px 4px 0px 0px var(--b3-button-hilight0);
+	/* 大分割线 */
+}
+
+/* 已关闭笔记本列表 */
+ul.b3-list.fn__flex-column.fn__flex-1 .b3-list-item {
+	margin: 0 !important;
+	padding-top: 3px;
+	padding-bottom: 5px;
+	box-shadow: var(--b3-shadow-line);
+}
+
+/* 左右展开栏列表项 */
+.b3-list-item {
+	margin: 0px 4px !important;
+	padding: 2px 4px;
+}
+
+.b3-list--background .b3-list-item {
+	border-radius: 0;
+}
+
+/* 左右展开栏列表焦点 */
+/* li.b3-list-item.b3-list-item--hide-action.b3-list-item--focus */
+/* 下面选择器包含搜索栏、设置栏，排除文档图标标签列表 */
+.b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom):not(.b3-menu .b3-list-item.b3-list-item--focus) {
+	background-color: transparent;
+	/* var(--b3-list-hover); */
+	box-shadow: var(--b3-button-concave);
+	background: var(--b3-button-bg-focus);
+	font-weight: bold;
+}
+
+/* 左右展开栏列表悬停 */
+/* 这个选择器包含搜索栏、设置栏列表 */
+.b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
+	color: var(--b3-text-h);
+	background: var(--b3-toolbar-bg-image);
+}
+
+.b3-list--background .b3-list-item:hover:not(.b3-list-item--focus)>.b3-list-item__text {
+	color: var(--b3-text-h);
+}
+
+/* 大纲标题第一层分割线 */
+div.sy__outline > div > ul > li[data-type="NodeHeading"] {
+	box-shadow: inset 0px 1px 0px 0px var(--b3-button-shadow1), inset 0px 2px 0px 0px var(--b3-button-hilight0);
+	/* 上分割线 */
+}
+
+/* 窗口宽度调节线 */
+.layout__resize {
+	background: transparent;
+}
+
+.layout__resize:after {
+	background-color: transparent;
+}
+
+.layout__resize--lr:after {
+	background: transparent;
+}
+
+.layout__resize:hover:after {
+	background-color: var(--b3-theme-primary);
+}
+
+/** 页签栏 **/
+/* 为页签栏设置阴影 */
+.fn__flex-column.fn__flex.fn__flex-1>.fn__flex {
+	border: 0 !important;
+	padding: 2px 2px 0 2px;
+	box-shadow: inset -1px 0px 0px 0px var(--b3-button-shadow2), inset 1px 1px 0px 0px var(--b3-button-hilight0), inset -2px 0px 0px 0px var(--b3-button-shadow1), inset 2px 2px 0px 0px var(--b3-button-hilight2);
+}
+
+/* 页签关闭按钮 */
+.layout-tab-bar .item__close>svg {
+	color: var(--b3-text-n);
+}
+
+.layout-tab-bar .item__close:hover>svg {
+	border-radius: 0;
+}
+
+/* 为新建和更多按钮取消外层阴影 */
+.layout-tab-bar .item--readonly {
+	box-shadow: none !important;
+}
+
+.layout-tab-bar .item--readonly [data-type="more"] {
+	padding-right: 8px;
+}
+
+.layout-tab-bar .item--readonly [data-type="new"]:hover>svg,
+.layout-tab-bar .item--readonly [data-type="more"]:hover>svg {
+	background-color: transparent;
+}
+
+/* 页签栏按钮点击 */
+.layout-tab-bar .item__close>svg:active,
+.layout-tab-bar .item--readonly [data-type="new"]>svg:active,
+.layout-tab-bar .item--readonly [data-type="more"]>svg:active {
+	box-shadow: var(--b3-button-concave);
+}
+
+/* 为页签设置阴影 */
+.layout-tab-bar .item {
+	min-height: 25px;
+	height: 30px;
+	margin: 2px;
+	box-shadow: var(--b3-button-convex);
+}
+
+/* 为页签设置可变等宽 */
+ul.fn__flex.layout-tab-bar [data-type="tab-header"] {
+	flex: 1;
+	min-width: 0;
+	width: 100vw;
+	max-width: 100%;
+}
+
+/* 为页签设置固定等宽 */
+/* ul.fn__flex.layout-tab-bar [data-type="tab-header"] {
+width: 200px;
+} */
+
+/* 页签文字裁剪，使末尾出现... */
+ul.fn__flex.layout-tab-bar [data-type="tab-header"] .item__text {
+	text-overflow: ellipsis;
+}
+
+/* 页签关闭按钮调整位置 */
+ul.fn__flex.layout-tab-bar [data-type="tab-header"] .item__close {
+	margin-left: auto;
+}
+
+/* 使页签底部线条透明 */
+.layout-tab-bar .item--focus:after,
+.layout__wnd--active .layout-tab-bar .item--focus:after {
+	background-color: transparent;
+}
+
+/* 为当前窗口的页签设置阴影 */
+.layout-tab-bar .item--focus {
+	box-shadow: var(--b3-button-concave);
+	background-image: var(--b3-button-bg-focus);
+}
+
+/* 为窗口为活跃状态的页签设置加粗字体 */
+.layout__wnd--active .layout-tab-bar .item--focus {
+	font-weight: bold;
+	text-shadow: 0 0 10px var(--b3-theme-primary);
+}
+
+/* 页签悬停 */
+.layout-tab-bar .item:not(.layout-tab-bar .item--readonly):not(.layout__wnd--active .layout-tab-bar .item--focus):hover {
+	background: var(--b3-toolbar-bg-image);
+}
+
+.layout-tab-bar .item:not(.layout-tab-bar .item--readonly):not(.layout__wnd--active .layout-tab-bar .item--focus):hover>.item__text {
+	color: var(--b3-text-h);
+	transition: var(--b3-transition);
+}
+
+/* 页签点击 */
+.layout-tab-bar .item:not(.layout-tab-bar .item--readonly):active {
+	background: transparent !important;
+	box-shadow: var(--b3-button-concave);
+}
+
+/* 编辑窗口第一层，包含页签栏、面包屑和正文 */
+/* 取消窗口过窄时多余的滚动条 */
+.layout__center [data-type=wnd] {
+	position: relative;
+	min-height: 10% !important;
+}
+
+/* 编辑窗口第二层，包含面包屑和正文的外边界。只要设置值就会盖住container的背景，比.layout-tab-container少了左右展开栏*/
+/* 取消窗口过窄时多余的滚动条 */
+.layout__center .layout-tab-container {
+	overflow-y: hidden;
+}
+
+/* 编辑窗口第三层，包括面包屑和正文,向下滚动的正文在这项 */
+/* 取消窗口过窄时多余的滚动条 */
+.layout-tab-container>.fn__flex-1 {
+	overflow: hidden;
+	min-width: 0;
+}
+
+/* 编辑窗口第三层，包含面包屑和正文，可以向下滚动的正文在这层。比‘.layout-tab-container>.fn__flex-1’少了左右展开栏。排除块引浮窗、ctrl+p预览窗口、数据历史预览窗口 */
+.protyle:not(.block__edit.fn__flex-1.protyle):not(.search__preview):not(.fn__flex-1.history__text.protyle) {
+	box-sizing: border-box;
+	padding: 2px 6px 6px 6px;
+	box-shadow: inset -1px -1px 0px 0px var(--b3-button-shadow2), inset 1px 0px 0px 0px var(--b3-button-hilight0), inset -2px -2px 0px 0px var(--b3-button-shadow1), inset 2px 0px 0px 0px var(--b3-button-hilight2), inset -4px -4px 0px 0px var(--b3-theme-background), inset 4px 0px 0px 0px var(--b3-theme-background), inset 5px 1px 0px 0px var(--b3-button-shadow2), inset 6px 2px 0px 0px var(--b3-button-shadow1), inset -5px -5px 0px 0px var(--b3-button-hilight0), inset -6px -6px 0px 0px var(--b3-button-hilight2);
+	background-color: var(--b3-button-hilight1);
+}
+
+/** 正文，编辑窗口只能用这个选择器做阴影，不然分屏没边框 **/
+/* .protyle-content */
+
+/** 编辑窗口面包屑,排除块引浮窗面包屑 **/
+.protyle-breadcrumb:not(.block__content .protyle-breadcrumb) {
+	position: absolute;
+	box-sizing: border-box;
+	margin: 0 3px;
+	top: 0px;
+	left: 2px;
+	width: calc(100% - 8px);
+	border-bottom: 2px solid var(--b3-button-shadow1);
+	box-shadow: var(--b3-button-concave);
+	background-color: var(--b3-theme-background);
+	opacity: 0;
+	z-index: 2;
+	transition: all 0.3s ease-out;
+}
+
+.protyle-breadcrumb:hover:not(.block__content .protyle-breadcrumb) {
+	opacity: 1;
+}
+
+/* 编辑窗口面包屑子项 */
+.protyle-breadcrumb__item {
+	border-radius: 0;
+	color: var(--b3-text-n);
+	/* var(--b3-theme-on-surface) */
+}
+
+.protyle-breadcrumb__item svg {
+	color: var(--b3-text-n);
+	/* var(--b3-theme-on-surface) */
+}
+
+.protyle-breadcrumb__item svg:hover {
+	color: var(--b3-text-h);
+	/* var(--b3-theme-on-background) */
+}
+
+.protyle-breadcrumb__item:hover,
+.protyle-breadcrumb__item--active {
+	color: var(--b3-text-h);
+	/* var(--b3-theme-on-background) */
+	background: linear-gradient(to right, var(--b3-linear-gradient2) 0%, var(--b3-linear-gradient3) 100%);
+	/* var(--b3-list-hover) */
+}
+
+/* 面包屑层级箭头 */
+/* .protyle-breadcrumb__arrow {
+    margin: 0 0px;
+    padding: 7px 1px;
+    box-shadow: var(--b3-button-convex);
+} */
+
+/* 按钮 */
+.block__icon {
+	border-radius: 0;
+}
+
+.block__icon:hover:not([disabled]):not(.ft__primary),
+.block__icon--active {
+	background: transparent;
+	z-index: 2;
+}
+
+.block__icon:active {
+	box-shadow: var(--b3-button-concave);
+}
+
+/* 文档标题 */
+.protyle-title__input {
+	background: transparent;
+}
+
+/** 编辑窗口工具栏 **/
+.protyle-toolbar {
+	padding: 2px;
+	border-radius: 0;
+	box-shadow: inset -1px -1px 0px 0px var(--b3-button-shadow2), inset 1px 1px 0px 0px var(--b3-theme-background), inset -2px -2px 0px 0px var(--b3-button-shadow1), inset 2px 2px 0px 0px var(--b3-button-hilight0);
+}
+
+.protyle-toolbar>button {
+	margin: 2px 1px;
+	width: 25px;
+	height: 25px;
+	box-shadow: var(--b3-button-convex);
+}
+
+.protyle-toolbar>button:hover>svg {
+	color: var(--b3-theme-primary);
+}
+
+.protyle-toolbar>button:active {
+	box-shadow: var(--b3-button-concave);
+}
+
+/* 编辑窗口工具栏分割线 */
+.protyle-toolbar__divider {
+	width: 2px;
+	box-shadow: inset -1px 0 0 var(--b3-button-hilight0), inset 1px 0 0 var(--b3-button-shadow1);
+}
+
+/* 弹出菜单栏，包含块标、状态栏、编辑工具栏弹出菜单 */
+.b3-menu,
+.protyle-util {
+	border-radius: 0;
+	box-shadow: var(--b3-shadow-bar);
+	/* var(--b3-dialog-shadow); */
+	background-color: var(--b3-theme-background);
+}
+
+/* 编辑工具栏字体-字号选择背景 */
+.protyle-util .b3-select {
+	padding: 2px;
+	border-radius: 0;
+	background: var(--b3-text-h);
+	box-shadow: var(--b3-button-concave);
+}
+
+/* 编辑工具栏字体-选项阴影 */
+.b3-color__square:hover {
+	box-shadow: inset -1px -1px 0px 0px var(--b3-button-shadow2), inset 1px 1px 0px 0px var(--b3-button-hilight0);
+}
+
+.b3-color__square:active {
+	box-shadow: inset 1px 1px 0px 0px var(--b3-button-shadow2), inset -1px -1px 0px 0px var(--b3-button-hilight0);
+}
+
+.protyle-font__style:hover {
+	box-shadow: inset -1px -1px 0px 0px var(--b3-button-shadow2), inset 1px 1px 0px 0px var(--b3-button-hilight0);
+}
+
+.protyle-font__style:active {
+	box-shadow: inset 1px 1px 0px 0px var(--b3-button-shadow2), inset -1px -1px 0px 0px var(--b3-button-hilight0);
+}
+
+/* 编辑工具栏-字体-清除样式按钮 */
+.b3-button--text,
+.b3-button--cancel {
+	border-radius: 0;
+	background: transparent;
+	transition: none;
+}
+
+.b3-button--text:hover,
+.b3-button--text:focus,
+.b3-button--cancel:hover,
+.b3-button--cancel:focus {
+	background: transparent;
+	box-shadow: inset -1px -1px 0px 0px var(--b3-button-shadow2), inset 1px 1px 0px 0px var(--b3-button-hilight0);
+}
+
+.b3-button--text:active,
+.b3-button--cancel:active {
+	background: transparent !important;
+	box-shadow: inset 1px 1px 0px 0px var(--b3-button-shadow2), inset -1px -1px 0px 0px var(--b3-button-hilight0) !important;
+}
+
+/* 编辑工具栏字体-分隔线 */
+.protyle-font>div:nth-child(odd) {
+	margin: 4px 0 !important;
+}
+
+.protyle-font>div:nth-child(even) {
+	padding-bottom: 8px;
+	box-shadow: var(--b3-shadow-line);
+}
+
+.fn__hr {
+	height: 0px;
+}
+
+/** “块标”、“更多”菜单列表项 **/
+.b3-menu__item--current {
+	color: var(--b3-text-h);
+	background-image: var(--b3-toolbar-bg-image);
+	/* var(--b3-list-hover); */
+}
+
+/* “块标”右键-外观-清除样式 */
+.b3-menu .b3-menu__submenu--row .b3-menu__item:last-child .b3-menu__label>.fn__flex::after {
+	content: attr(aria-label);
+	display: flex;
+}
+
+.b3-menu__item {
+	border-radius: 0px;
+	background-color: var(--b3-theme-background);
+	/* var(--b3-menu-background); */
+}
+
+.b3-menu__item--show .b3-menu__submenu {
+	border-radius: 0;
+	border: 0;
+	background-color: var(--b3-theme-background);
+	box-shadow: var(--b3-shadow-convex);
+}
+
+/* 块引“[[”窗口列表项 */
+.b3-list-item.b3-list-item--two {
+	margin-top: 4px !important;
+	width: calc(100% - 10px) !important;
+}
+
+.b3-list-item.b3-list-item--two.b3-list-item--focus {
+	margin-top: 4px !important;
+	/* background: var(--b3-text-h) !important; */
+}
+
+.b3-list-item.b3-list-item--two:hover div,
+.b3-list-item.b3-list-item--two:hover svg,
+.b3-list-item.b3-list-item--two:hover span {
+	color: var(--b3-text-h);
+}
+
+/* “/"Iframe窗口，选择器不对，会影响“/” */
+/* .protyle-hint.b3-list.b3-list--background.hint--menu {
+    padding: 3px 8px 8px 8px;
+    width: 200px !important;
+}
+.protyle-hint.b3-list.b3-list--background.hint--menu button {
+    background: none !important;
+    box-shadow: none !important;
+} */
+
+/* “/” 菜单修改*/
+.hint--menu {
+	column-count: 4;
+	column-width: 20px;
+	column-rule: 1px outset var(--b3-button-shadow1);
+	min-width: 40vw;
+	max-height: 700px;
+	padding: 4px !important;
+}
+
+/* “/” 菜单分割线*/
+.b3-menu__separator:not(.hint--menu > div:nth-child(42)) {
+	height: 2px;
+	box-shadow: var(--b3-shadow-line);
+}
+
+/*  #1# “/” 输入框，会使其他输入需偏离默认主题位置，需用各自选择器调整才能对齐 */
+.b3-text-field:not(input.b3-text-field.b3-form__icon-input):not(.search__header .b3-text-field--text),
+.pcr-app .pcr-interaction .pcr-result {
+	margin: 0 13px 18px 0 !important;
+	border-radius: 0px;
+	box-shadow: var(--b3-shadow-concave);
+	background: var(--b3-text-h);
+}
+
+/* “/” 输入框焦点状态 */
+.b3-text-field:focus,
+.pcr-app .pcr-interaction .pcr-result:focus {
+	box-shadow: var(--b3-shadow-concave);
+}
+
+/* “/” 输入框旁边的前进后退按钮，排除代码片段的删除按钮 */
+span.block__icon.block__icon--show:not(span.b3-tooltips.b3-tooltips__sw.block__icon.block__icon--show) {
+	padding: 0 7px;
+	height: 28px;
+	box-shadow: var(--b3-small-button-convex);
+}
+
+/* “/” 模版输入框 */
+.protyle-util>div>div>.fn__flex {
+	margin: 0 1px 8px 0 !important;
+}
+
+/* “/” 资源输入框 */
+.protyle-util>div>.fn__flex-column>.fn__flex {
+	margin: 5px 0px 0px 0px !important;
+	/* height: 34px; */
+}
+
+/* “/” 引用资源列表 */
+.protyle-util>div>.fn__flex-column {
+	margin-top: -3px;
+	max-width: 30vw !important;
+}
+
+/* “/” 引用资源预览区，排除字体-字号 */
+.protyle-util>div> :nth-child(2):not(.protyle-font .fn__flex) {
+	width: 30vw !important;
+}
+
+/** “/” 公式块、HTML等编辑窗口 **/
+.block__popover--move {
+	padding: 2px;
+}
+
+/* “/” 公式块、HTML等编辑窗口的顶栏 */
+.block__icons.block__icons--border.fn__flex {
+	border-radius: 0;
+	color: var(--b3-text-h);
+}
+
+.layout-tab-container.fn__flex-1>div.fn__flex-1.protyle>div.protyle-util>div>textarea {
+	margin: 0 !important;
+	/* “/” 公式块、HTML等输入栏会受“/” #1#影响，用此行代码取消外边距 */
+	min-height: 15vh;
+	/* “/” 公式块、HTML等输入栏默认高度 */
+}
+
+/** 块标平滑移动和悬停放大 **/
+/* 块标平滑移动 */
+.protyle-gutters {
+	transition: all 300ms ease-out;
+	/* 数值越大，速度越慢 */
+}
+
+/* 调整尺寸和背景色 */
+/*.protyle-gutters button svg {
+    height: 22px;
+    padding: 0 4px;
+    border-radius: 3px;
+}
+.protyle-gutters button svg:hover {
+    background-color: var(--b3-theme-background-light);
+}*/
+/* 块标悬停放大 */
+.protyle-gutters button svg:hover {
+	transform: scale(1.1);
+	color: var(--b3-theme-error);
+}
+
+/** 行内元素 **/
+
+/** 图片样式 **/
+/* 图片缩放按钮调整 */
+.protyle-wysiwyg [data-node-id] .img .protyle-action__drag {
+	height: 20%;
+	top: 40%;
+	right: 12px;
+	width: 5px;
+	opacity: 0.86;
+	z-index: 2;
+}
+
+.protyle-wysiwyg [data-node-id] .img .protyle-action__drag:hover {
+	background-color: var(--b3-theme-on-background);
+	box-shadow: 0 0 1px 1px var(--b3-theme-background);
+}
+
+/* 图片菜单按钮调整 */
+.protyle-icon--only {
+	border-radius: 15px;
+}
+
+.protyle-icon {
+	background-color: var(--b3-theme-surface);
+	color: var(--b3-theme-on-surface);
+}
+
+/* 为图片添加边框、阴影和圆角 */
+.b3-typography .img,
+.protyle-wysiwyg .img {
+	margin: 8px 4px 0px 4px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 5px -2px rgb(0 0 0 / 70%), -1px -1px 3px -1px rgb(0 0 0 / 40%);
+	padding: 5px 0;
+	background: var(--b3-button-hilight);
+}
+
+.b3-typography .img {
+	padding: 5px !important;
+	transition: all .35s ease-out 0ms;
+}
+
+/* 调整图片和图片标题位置，使其左右居中 */
+.protyle-wysiwyg img,
+.protyle-action__title,
+.protyle-wysiwyg .img .protyle-action__title {
+	position: relative;
+	left: -3px;
+}
+
+/* 图片选择样式 */
+.protyle-wysiwyg [data-node-id] .img--select {
+	filter: unset;
+	box-shadow: 0px 0px 10px 3px #f05f40b3 !important;
+	transition: all .35s ease-out 0ms;
+}
+
+/* 图片悬停样式 */
+.protyle-wysiwyg [data-node-id] .img:hover {
+	box-shadow: 0px 0px 5px 2px #f05f40b3;
+}
+
+/* 为图片增加一个伪类做遮盖层 */
+.protyle-wysiwyg .img>span:nth-child(2)::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #f05f40b3;
+	position: absolute;
+	top: 0;
+	left: -3px;
+	opacity: 0;
+	transition: all .35s ease-out 0ms;
+	pointer-events: none;
+}
+
+.protyle-wysiwyg .img>span:nth-child(2):hover::after {
+	opacity: 1;
+}
+
+.protyle-wysiwyg .img .protyle-action__title {
+	background: var(--b3-button-hilight1);
+	pointer-events: none;
+	z-index: 1;
+}
+
+.b3-typography .img .protyle-action__title {
+	left: 0px !important;
+}
+
+/* 导出预览模式悬停样式，好像不能在导出模式添加伪类，只能用这个了 */
+.b3-typography .img:hover {
+	transform: translate(0px, -4px);
+	box-shadow: 0px 4px 20px -8px rgb(0 0 0 / 20%), 4px 1px 20px 1px rgb(0 0 0 / 20%), -4px 2px 20px 1px rgb(0 0 0 / 20%);
+}
+
+/* 图片预览窗口背景模糊 */
+.viewer-backdrop {
+	backdrop-filter: blur(15px);
+}
+
+/* 代码块 */
+.b3-typography .code-block,
+.protyle-wysiwyg .code-block {
+	margin: 2em 0 1em 0;
+	padding: 4px;
+	background: var(--b3-theme-background);
+	box-shadow: var(--b3-shadow-convex);
+}
+
+/* 代码块顶栏 */
+.b3-typography .code-block .protyle-action,
+.protyle-wysiwyg .code-block .protyle-action {
+	padding: 2px;
+	left: 0px;
+	right: 0px;
+	top: -24px;
+	background: var(--b3-toolbar-bg-image);
+	box-shadow: inset -1px 0px 0px 0px var(--b3-button-shadow2), inset 1px 1px 0px 0px var(--b3-button-hilight0), inset -2px 0px 0px 0px var(--b3-button-shadow1), inset 2px 2px 0px 0px var(--b3-button-hilight2);
+}
+
+/* 代码块按钮常显 */
+.b3-typography .code-block .protyle-action .protyle-icon,
+.b3-typography .code-block .protyle-action .protyle-action__language,
+.protyle-wysiwyg .code-block .protyle-action .protyle-icon,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
+	opacity: 1;
+}
+
+/* 代码块语言选择 */
+.b3-typography .code-block .protyle-action .protyle-action__language,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
+	margin-left: 4px !important;
+	margin-top: 0px;
+	color: var(--b3-text-h);
+}
+
+/* 为代码块语言添加图标 */
+.b3-typography .code-block .protyle-action .protyle-action__language::before,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language::before {
+	content: "";
+	position: relative;
+	display: inline-block;
+	top: 5px;
+	width: 16px;
+	height: 16px;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyElEQVQ4T5VTiRHDIAyDycJmwGYwWYp8ETUupi13eYjRExliOIxSyj2ueFrjFgHOOYdaaziR/E1gXU0CFGCVajsH+JZSCrjGEKzcWLiuSyxjwH7vXd5ba/JU4JXAkmCuwQCCZAgxz+l8yYC2d+BHZCpPJv67tY3fARHUoazUdVdjpOoPtieQZAhcCDTlJixbXh3oGbvB1D3bC4OeDOD9Bex3gWBHVYAmzPdG2oBRxEFi+mz3xze9Dximu/jxj3X7jWTi1t1xD90LFZabEZhZI4MAAAAASUVORK5CYIIArkJgggAA);
+
+}
+
+.protyle-wysiwyg[contenteditable=true] .code-block .protyle-action .protyle-action__language:hover {
+	color: var(--b3-text-h);
+}
+
+/* 代码块复制和更多按钮 */
+.protyle-icon {
+	position: relative;
+	top: 1px;
+	right: 3px;
+	border-radius: 0 !important;
+	box-shadow: var(--b3-small-button-convex);
+	background: var(--b3-theme-background);
+	color: var(--b3-text-n);
+}
+
+.protyle-icon:active {
+	background: var(--b3-theme-background);
+	box-shadow: var(--b3-small-button-concave);
+}
+
+.protyle-icon:hover {
+	color: var(--b3-text-n);
+	background: var(--b3-theme-background);
+}
+
+/* 代码块正文 */
+.b3-typography div.hljs,
+.protyle-wysiwyg div.hljs {
+	border-radius: 0;
+	padding: 8px;
+	background-color: var(--b3-button-hilight2);
+	box-shadow: var(--b3-shadow-concave);
+}
+
+/* 代码块行号 */
+.protyle-linenumber__rows {
+	top: 12px;
+	left: 4px;
+	padding: 0px 4px;
+}
+
+.protyle-wysiwyg--hl .protyle-linenumber__rows,
+.protyle-wysiwyg--select .protyle-linenumber__rows {
+	background: transparent;
+}
+
+/* 正文分割线 */
+.protyle-wysiwyg [data-node-id].hr {
+	padding: 0;
+}
+
+.protyle-wysiwyg [data-node-id].hr>div {
+	width: 100%;
+	height: 6px;
+	border: 0;
+	background: var(--b3-theme-background);
+	box-shadow: var(--b3-shadow-convex);
+}
+/* 行内元素-按键 */
+.b3-typography kbd, .b3-typography span[data-type~=kbd], .protyle-wysiwyg kbd, .protyle-wysiwyg span[data-type~=kbd] {
+	box-shadow: var(--b3-small-button-convex);
+}
+
+/* 状态栏 */
+.status {
+	padding: 0px;
+	height: 28px;
+	line-height: 28px;
+	box-shadow: var(--b3-shadow-concave);
+}
+
+.status .toolbar__item {
+	padding: 4px 7px;
+}
+
+.status .toolbar__item:hover {
+	background-color: transparent !important;
+}
+
+.status .toolbar__item>svg {
+	padding: 3px;
+}
+
+.status .toolbar__item:hover>svg {
+	box-shadow: var(--b3-button-concave);
+}
+
+/* 底栏列表项 */
+.status #barDock .b3-menu__item:hover,
+.status #barHelp .b3-menu__item:hover {
+	color: var(--b3-text-h);
+	background-image: var(--b3-toolbar-bg-image);
+	/* var(--b3-list-hover); */
+}
+
+.status #barDock .b3-menu__item:active,
+.status #barHelp .b3-menu__item:active {
+	color: var(--b3-theme-on-background);
+	background-image: none;
+	box-shadow: var(--b3-button-concave);
+}
+
+/** 块引浮窗 **/
+/* 块引浮窗整体阴影 */
+.block__popover--open {
+	padding: 2px;
+	border-radius: 0;
+	box-shadow: var(--b3-button-convex);
+}
+
+/* 块引浮窗顶栏调整 */
+.block__icons.block__icons--border {
+	height: 30px;
+	background-image: var(--b3-toolbar-bg-image);
+}
+
+/* 浮窗顶栏钉住按钮按下效果 */
+span.block__icon.b3-tooltips.b3-tooltips__sw.block__icon--active,
+[data-type="pin"].block__icon.b3-tooltips.b3-tooltips__nw.block__icon--active {
+	box-shadow: var(--b3-button-concave);
+}
+
+/* 块引正文 */
+.block__popover .protyle-content {
+	box-shadow: var(--b3-shadow-concave);
+	background: var(--b3-text-h);
+}
+
+/* 块引“[[”窗口 */
+.protyle-hint {
+	padding: 8px 0 8px 8px;
+	border-radius: 0;
+	box-shadow: var(--b3-button-convex);
+	background: var(--b3-theme-background);
+}
+
+/* ctrl+p 头部 */
+.search__header {
+	background: none;
+	border-bottom: 0;
+}
+
+/* ctrl+p 输入框 */
+.search__header .b3-text-field--text {
+	margin: 4px !important;
+	/* 因为添加阴影，需要把外边距调整下才能显示阴影 */
+	height: 32px;
+	box-shadow: var(--b3-shadow-concave);
+	background: var(--b3-text-h);
+}
+
+/* ctrl+p 列表调整 */
+.search__list {
+	padding: 4px 4px 8px 4px;
+}
+
+/* ctrl+p预览窗口 */
+.search__preview {
+	margin: 4px 5px 5px 4px;
+	padding: 2px;
+	box-shadow: var(--b3-shadow-concave) !important;
+	background: var(--b3-button-hilight1);
+}
+
+/* ctrl+p 宽度调节线 */
+.search__drag {
+	top: 7px;
+	height: 15px;
+}
+
+.search__drag:after {
+	background: transparent;
+}
+
+.search__drag:hover:after {
+	background: var(--b3-theme-primary);
+}
+
+/* ctrl+p指定路径列表项 */
+div#foldTree>ul>li.b3-list-item.b3-list-item--focus,
+div#foldTree>ul>ul li.b3-list-item.b3-list-item--focus {
+	background-image: none;
+}
+
+/* 数据历史输入框 */
+input.b3-text-field.b3-form__icon-input {
+	border-radius: 0;
+	box-shadow: var(--b3-shadow-concave);
+	background: var(--b3-text-h);
+}
+
+/* 数据历史预览窗口 */
+.fn__flex-1.history__text.protyle {
+	border-radius: 0;
+	margin: 2px;
+	padding: 2px !important;
+	box-shadow: var(--b3-shadow-concave) !important;
+}
+
+/* 数据历史搜索框右边的下拉菜单 */
+.history__repoheader select:focus {
+	border-radius: 0;
+	box-shadow: var(--b3-small-button-concave);
+}
+
+/* iframe资源框 */
+input.b3-text-field.fn__size200 {
+	margin: 4px 0 !important;
+}
+
+/** 调整ctrl+p alt+p 等 **/
+/* 调整透明度，使背景图层变亮 */
+.b3-dialog--open .b3-dialog__scrim {
+	opacity: 0.5;
+}
+
+/* 为删除确认对话框添加阴影 */
+.b3-dialog--open .b3-dialog__container {
+	padding: 2px;
+	border-radius: 0;
+	box-shadow: var(--b3-shadow-convex);
+}
+
+/* 取消删除确认对话框的分割线 */
+.b3-dialog__header,
+.b3-dialog__action {
+	border: 0;
+}
+
+/* 数据快照列表 */
+ul.b3-list.b3-list--background.fn__flex-1 li:hover div,
+ul.b3-list.b3-list--background.fn__flex-1 li:hover div>:nth-child(-n+3) {
+	color: var(--b3-text-h);
+}
+
+/* alt+p 左侧列表 */
+ul.b3-tab-bar.b3-list.b3-list--background {
+	padding: 4px !important;
+}
+
+/* alt+p 左侧列表竖分割线 */
+ul.b3-tab-bar.b3-list.b3-list--background {
+	margin: 4px 0;
+	padding: 0 6px 0 4px !important;
+	box-shadow: inset -1px 0 0 var(--b3-button-hilight0), inset -2px 0 0 var(--b3-button-shadow1);
+}
+
+/* alt+p 左侧列表项 */
+li.b3-list-item.b3-list-item--big {
+	padding: 10px 24px;
+	/* 修改高度 */
+}
+
+li.b3-list-item.b3-list-item--big:not(li.b3-list-item.b3-list-item--big.b3-list-item--focus):hover {
+	color: var(--b3-text-h);
+}
+
+/* alt+p 右侧分割线 */
+.b3-label:not(div#syncProviderPanel div) {
+	border: 0;
+	box-shadow: var(--b3-shadow-line);
+}
+
+/* alt+p  右侧子项输入框 */
+label.fn__flex.b3-label select {
+	border-radius: 0;
+	background: var(--b3-text-h);
+	box-shadow: var(--b3-shadow-concave);
+}
+
+label.fn__flex.b3-label select:focus {
+	box-shadow: var(--b3-shadow-concave);
+}
+
+/* alt+p 按钮 */
+label.b3-label.fn__flex button {
+	border-radius: 0;
+	box-shadow: var(--b3-button-convex);
+}
+
+label.b3-label.fn__flex button:hover {
+	background: transparent;
+}
+
+label.b3-label.fn__flex button:focus {
+	box-shadow: var(--b3-button-concave);
+}
+
+/* alt+p 快捷键清空、数据仓库按钮 */
+.b3-button--outline {
+	border-radius: 0;
+	box-shadow: var(--b3-button-convex);
+}
+
+.b3-button--outline:active {
+	background: transparent;
+	box-shadow: var(--b3-button-concave);
+}
+
+.b3-button--outline:hover {
+	background: transparent;
+	box-shadow: var(--b3-button-convex);
+}
+
+/* 调整字体选择框、导出引用块、嵌入块选择框位置 */
+label.fn__flex.b3-label select[id="fontFamily"],
+label.fn__flex.b3-label select[id="blockRefMode"],
+label.fn__flex.b3-label select[id="blockEmbedMode"],
+label.fn__flex.b3-label select[id="fileAnnotationRefMode"] {
+	margin-right: 15px;
+}
+
+/* 集市顶栏按钮 */
+.item.item--full.item--focus {
+	background: var(--b3-button-bg-focus) !important;
+}
+
+.item.item--full.item--focus span {
+	color: var(--b3-text-n) !important;
+	font-weight: bold;
+	text-shadow: 0 0 10px var(--b3-theme-primary);
+}
+
+.layout-tab-bar .item--full.item--focus:after {
+	background: transparent;
+}
+
+/* 集市删除、更新、使用按钮 */
+span.block__icon.block__icon--show:not(span.b3-tooltips.b3-tooltips__sw.block__icon.block__icon--show):active {
+	box-shadow: var(--b3-small-button-concave);
+}
+
+/* KaTex 宏定义输入框 */
+textarea#katexMacros {
+	margin: 0 !important;
+}
+
+/* 代码片段元素倒序排列 */
+.b3-dialog__container:has(#addCodeSnippetCSS)>div:nth-child(3)>div.fn__flex-column>div.fn__flex-1>div {
+	flex-direction: column-reverse;
+	display: flex;
+}
+/* 闪卡按钮调整，因为输入栏加了margin导致按钮对齐底边而太高了 */
+button[data-type="create"] {
+    margin-bottom: 17px;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+	width: 13px;
+	/* background-image: var(--b3-button-bg-focus); */
+}
+
+::-webkit-scrollbar-thumb {
+	border: 0;
+	border-radius: 0px;
+	box-shadow: inset -1px -1px 0px 0px var(--b3-button-shadow2), inset 1px 1px 0px 0px var(--b3-theme-background), inset 2px 2px 0px 0px var(--b3-button-hilight0);
+	background-color: var(--b3-theme-background);
+}
+
+/* 块滚动条 */
+.protyle-scroll {
+	right: 18px !important;
+}
