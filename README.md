@@ -8,4 +8,3 @@
 
 over.
 
-![image](https://user-images.githubusercontent.com/112914211/209442397-ad1a686b-1484-4569-a9af-93730351df67.png)
