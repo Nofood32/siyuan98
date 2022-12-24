@@ -1,3 +1,4 @@
+/* 来自于Savor主题 https://github.com/royc01/notion-theme */
 window.theme = {};
 
 /**
